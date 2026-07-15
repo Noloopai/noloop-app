@@ -1,20 +1,27 @@
 # dependencies
 node_modules/
+.pnp
+.pnp.js
 
-# next.js
+# next.js (web frontend)
 .next/
 out/
-
-# production
 build/
 dist/
 
+# testing / coverage
+coverage/
+
 # misc
 .DS_Store
+Thumbs.db
 *.pem
 
-# debug
+# debug logs
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
 # env
 .env
@@ -23,8 +30,19 @@ dist/
 
 # typescript
 *.tsbuildinfo
+next-env.d.ts
 
-# generated synthetic data
-backend/data/
+# deployment
+.vercel
 
-docs
+# editor / IDE
+.vscode/
+.idea/
+
+# python caches (ai/ and backend-py/ have their own .gitignore too)
+__pycache__/
+*.py[cod]
+.venv/
+
+# generated synthetic data (backend-py)
+backend-py/data/synthetic/
